@@ -1,6 +1,5 @@
 package com.datatype;
 
-import com.datatype.TaskSolving;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +7,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int choice = 1;
         while(choice != 0) {
+            System.out.println();
+            System.out.println("Enter 1 for task 1\n" + "Enter 2 for task 2\n" + "Enter 3 for task 3\n" +
+                    "Enter 4 for task 4\n" + "Enter 5 for task 5\n" + "Enter 6 for task 6\n" + "Enter 0 to exit");
             choice = in.nextInt();
             switch (choice) {
                 case 0:
