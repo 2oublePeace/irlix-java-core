@@ -29,16 +29,16 @@ public class TaskSolving {
      * @return количество високосных годов
      */
     static int countLeap(int year) {
-        return year / 4 - year / 100;
+        return year / 4 - year / 100 + year / 400;
     }
 
     /**
      * Метод реализующий решение задачи 3
-     * @return число с иныертированным битом
+     * @return число с инвертированным битом
      */
     static int flipBit(int number, int position) {
         char[] bitsOfNumber = Integer.toBinaryString(number).toCharArray();
-        bitsOfNumber[bitsOfNumber.length - position] = bitsOfNumber[position] == '0' ? '1' : '0';
+        bitsOfNumber[bitsOfNumber.length - position] = bitsOfNumber[bitsOfNumber.length - position] == '0' ? '1' : '0';
         int result = Integer.parseInt(String.valueOf(bitsOfNumber), 2);
         return result;
     }
@@ -56,7 +56,7 @@ public class TaskSolving {
      * @return является ли число степенью двойки
      */
     static boolean isTwoGrade(int a) {
-        return (Math.abs(a) == Integer.highestOneBit(Math.abs(a))) ? true : false;
+        return (Math.abs(a) == Integer.highestOneBit(Math.abs(a)));
     }
 
     /**
@@ -66,6 +66,6 @@ public class TaskSolving {
     static boolean isPalindrome(String inputString) {
         String filteredString = inputString.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
         StringBuilder reverseFilteredString = new StringBuilder(filteredString).reverse();
-        return (filteredString.equals(reverseFilteredString.toString())) ? true : false;
+        return (filteredString.equals(reverseFilteredString.toString()));
     }
 }
