@@ -1,4 +1,4 @@
-package com.datatype;
+package com.stage1;
 
 /**
  * Данный клас реализует методы решения задач

@@ -1,4 +1,4 @@
-package com.datatype;
+package com.stage1;
 
 import java.util.Scanner;
 
