@@ -1,4 +1,4 @@
-package com.stage2.task10;
+package com.stage2.task_10;
 
 import java.awt.*;
 
@@ -35,6 +35,7 @@ public class Robot {
             case RIGHT -> direction = Direction.UP;
             case UP -> direction = Direction.LEFT;
         }
+        System.out.println("Робот повернул налево");
     }
 
     public void turnRight() {
@@ -45,6 +46,7 @@ public class Robot {
             case RIGHT -> direction = Direction.DOWN;
             case UP -> direction = Direction.RIGHT;
         }
+        System.out.println("Робот повернул направо");
     }
 
     public void stepForward() {
@@ -54,5 +56,6 @@ public class Robot {
             case LEFT -> point.x--;
             case RIGHT -> point.x++;
         }
+        System.out.println("Робот шагнул прямо");
     }
 }

@@ -1,9 +1,9 @@
-package com.stage2.task12;
+package com.stage2.task_12;
 
-public class SpamAnalyzer extends KeywordAnalyzer {
+public class NegativeTextAnalyzer extends KeywordAnalyzer {
     private String[] keywords;
 
-    public SpamAnalyzer(String[] keywords) {
+    public NegativeTextAnalyzer(String[] keywords) {
         this.keywords = keywords;
     }
 
@@ -14,6 +14,6 @@ public class SpamAnalyzer extends KeywordAnalyzer {
 
     @Override
     protected Label getLabel() {
-        return Label.SPAM;
+        return Label.NEGATIVE_TEXT;
     }
 }

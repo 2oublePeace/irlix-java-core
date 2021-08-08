@@ -1,4 +1,4 @@
-package com.stage2.task11;
+package com.stage2.task_11;
 
 public class ComplexNumber {
     private int re;

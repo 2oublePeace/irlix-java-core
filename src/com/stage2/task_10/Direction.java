@@ -1,4 +1,4 @@
-package com.stage2.task10;
+package com.stage2.task_10;
 
 public enum Direction {
     UP,

@@ -1,4 +1,4 @@
-package com.stage2.task12;
+package com.stage2.task_12;
 
 public enum Label {
     SPAM,

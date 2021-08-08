@@ -1,4 +1,4 @@
-package com.stage2.task12;
+package com.stage2.task_12;
 
 public class TooLongTextAnalyzer implements TextAnalyzer {
     int COMMENT_MAX_LENGTH = 32;
