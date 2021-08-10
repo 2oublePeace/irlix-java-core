@@ -95,7 +95,6 @@ public class TaskSolving {
     /**
      * Метод реализующий решение задачи 5
      * Выводит время затрат на обращение к массиву и списку
-     * @return
      */
     static void task5() {
         List<Integer> list = new LinkedList<>();
