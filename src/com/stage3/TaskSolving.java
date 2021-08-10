@@ -131,8 +131,8 @@ public class TaskSolving {
     }
 
     /**
-     * Метод реализующий решение задачи 4
-     * @return
+     * Метод реализующий решение задачи 6
+     * @return перевернутый HashMap
      */
     static Map<Integer, List<String>> task6() {
         Map<String, Integer> map = new HashMap<>();
@@ -149,6 +149,19 @@ public class TaskSolving {
                 List<String> list = new LinkedList<>();
                 list.add(entry.getKey());
                 reverseMap.put(entry.getValue(), list);
+            }
+        }
+
+        System.out.println("До обработки\n" + map.entrySet());
+        System.out.println("\nПосле обработки\n");
+
+        for (var entry : reverseMap.entrySet()) {
+            if (entry.getValue().size() > 1) {
+                for (var element : entry.getValue()) {
+                    System.out.println(entry.getKey() + "=" + element);
+                }
+            } else {
+                System.out.println(entry.getKey() + "=" + entry.getValue().get(0));
             }
         }
         return reverseMap;
