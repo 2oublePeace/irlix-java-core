@@ -3,8 +3,8 @@ package com.stage2.task_15;
 import java.util.Objects;
 
 public class Pair<T,U> implements IPair {
-    T first;
-    U second;
+    private T first;
+    private U second;
 
     private Pair(T first, U second) {
         this.first = first;
