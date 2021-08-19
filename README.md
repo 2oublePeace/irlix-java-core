@@ -149,7 +149,7 @@ boolean mustAlsoBeTrue = pair.hashCode() == pair2.hashCode(); // true!
 
 **Map<V, Collection<K>>**
 
-#Этап 4
+# Этап 4
 ## Задача 1:
 Напишите программу, которая создает экземпляр данного класса:
 ```java
