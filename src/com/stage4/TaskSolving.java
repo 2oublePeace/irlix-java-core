@@ -66,7 +66,7 @@ public class TaskSolving {
         Map<String, Integer> countMap = new HashMap<>();
         ArrayList<Runnable> taskList = new ArrayList<>();
         new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 taskList.add(() -> {
                     Task task = new Task();
 
@@ -90,7 +90,7 @@ public class TaskSolving {
         ExecutorService service = Executors.newFixedThreadPool(2);
 
         //Раздаем потокам задачи
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             service.submit(taskList.get(i));
         }
         service.shutdown();
@@ -102,6 +102,8 @@ public class TaskSolving {
         for (var entry : countMap.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
+
+        //taskList.clear();
     }
 
     /**
