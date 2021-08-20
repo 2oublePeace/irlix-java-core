@@ -25,12 +25,12 @@ public class MainApp {
                     TaskSolving.task2();
                     break;
                 case 3:
-                    System.out.println("Символ-количество:");
+                    System.out.println("Поток-количество:");
                     TaskSolving.task3();
                     break;
                 case 4:
-                    System.out.println("Коллекция уникальных объектов:");
-
+                    System.out.println("Запуск Deadlock:");
+                    TaskSolving.task4();
                     break;
             }
         }
