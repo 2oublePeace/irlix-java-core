@@ -106,7 +106,7 @@ public class TaskSolving {
 
     /**
      * Метод реализующий решение задачи 4
-     * Реализует Deadlock
+     * Реализует Deadlock. Скриншот JConsole находится в Readme.md
      */
     static void task4() {
         final Friend alphonse = new Friend("Alphonse");
