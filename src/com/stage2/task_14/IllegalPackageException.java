@@ -1,7 +1,7 @@
 package com.stage2.task_14;
 
-public class IllegalPackageException extends Exception {
-    public IllegalPackageException() {
-        super("Alarm");
+public static class IllegalPackageException extends Exception {
+    public IllegalPackageException(String message) {
+        super(message);
     }
 }

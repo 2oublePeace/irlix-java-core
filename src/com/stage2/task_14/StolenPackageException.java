@@ -1,4 +1,7 @@
 package com.stage2.task_14;
 
-public class StolenPackageException extends Exception {
+public static class StolenPackageException extends Exception {
+    public StolenPackageException(String message) {
+        super(message);
+    }
 }

@@ -2,7 +2,7 @@ package com.stage2.task_14;
 
 import java.util.logging.Logger;
 
-public class Spy implements MailService {
+public static class Spy implements MailService {
     private Logger logger;
 
     public Spy(Logger logger) {

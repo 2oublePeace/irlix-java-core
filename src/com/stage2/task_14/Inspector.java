@@ -1,14 +1,15 @@
 package com.stage2.task_14;
 
-public class Inspector implements MailService {
+public static class Inspector implements MailService {
     @Override
     public Sendable processMail(Sendable mail) {
         if (mail instanceof MailPackage) {
-            if (((MailPackage) mail).getContent().getContent() == "weapons" ||
-                    ((MailPackage) mail).getContent().getContent() == "banned substance") {
-                new IllegalPackageException();
-            } else if (((MailPackage) mail).getContent().getContent().contains("stones")) {
-                new StolenPackageException();
+            MailPackage mailPackage = (MailPackage) mail;
+            if (mailPackage.getContent().getContent() == "weapons"
+                    || mailPackage.getContent().getContent() == "banned substance") {
+                new IllegalPackageException("Запрещенная посылка!");
+            } else if (mailPackage.getContent().getContent().contains("stones")) {
+                new StolenPackageException("Посылка была украдена!");
             }
         }
 

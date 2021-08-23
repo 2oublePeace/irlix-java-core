@@ -1,6 +1,6 @@
 package com.stage2.task_14;
 
-public class Thief implements MailService{
+public static class Thief implements MailService{
     private int minPackageCost;
     private int sumOfCosts;
 
@@ -12,10 +12,11 @@ public class Thief implements MailService{
     @Override
     public Sendable processMail(Sendable mail) {
         if (mail instanceof MailPackage) {
-            if (((MailPackage) mail).getContent().getPrice() > minPackageCost) {
-                sumOfCosts += ((MailPackage) mail).getContent().getPrice();
-                return new MailPackage(mail.getFrom(), mail.getTo(), new Package("stones instead of" +
-                        ((MailPackage) mail).getContent(), 0));
+            MailPackage mailPackage = (MailPackage) mail;
+            if (mailPackage.getContent().getPrice() > minPackageCost) {
+                sumOfCosts += mailPackage.getContent().getPrice();
+                return new MailPackage(mail.getFrom(), mail.getTo(),
+                        new Package("stones instead of" + mailPackage.getContent(), 0));
             }
         }
 

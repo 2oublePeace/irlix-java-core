@@ -1,6 +1,6 @@
 package com.stage2.task_14;
 
-public class UntrustworthyMailWorker implements MailService {
+public static class UntrustworthyMailWorker implements MailService {
     private MailService[] mailServices;
     private RealMailService realMailService;
 
