@@ -99,6 +99,11 @@ https://docs.google.com/document/d/18jJ-jjMBqpItnhB0HHHwG0km_2W7AnVBJmoSdmJT2EY/
 ## Задача 13:
 Реализуйте метод sqrt(), вычисляющий квадратный корень числа. В отличие от Math.sqrt(), это метод при передаче отрицательного параметра должен бросать исключение java.lang.IllegalArgumentException с сообщением "Expected non-negative number, got ?", где вместо вопросика будет подставлено фактически переданное в метод число.
 
+## Задача 14:
+Описание задачи можно взять тут:
+
+https://docs.google.com/document/d/1MoVp_1L8CvlthNFeX1UA1BaVJ4jfvbRoxMG_H-nBp_E/edit?usp=sharing
+
 ## Задача 15:
 Реализуйте generic-класс Pair, похожий на Optional, но содержащий пару элементов разных типов и не запрещающий элементам принимать значение null.
 Реализуйте методы getFirst(), getSecond(), equals() и hashCode(), а также статический фабричный метод of(). Конструктор должен быть закрытым (private).
