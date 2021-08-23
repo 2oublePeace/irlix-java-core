@@ -3,7 +3,6 @@ package com.stage4;
 import com.stage4.task_1.Counter;
 import com.stage4.task_3.Task;
 import com.stage4.task_4.Friend;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -102,8 +101,6 @@ public class TaskSolving {
         for (var entry : countMap.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
-
-        //taskList.clear();
     }
 
     /**
